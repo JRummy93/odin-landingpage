@@ -1,4 +1,20 @@
+* {
+    border: red 1px solid;
+}
 
+body {
+    object-fit: fill;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    padding: 5% 20%;
+}
 
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
@@ -11,24 +27,24 @@ a:active { text-decoration: none; }
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
    
 }
 
 .header nav {
     display: flex;
     flex-flow: row;
-    align-items: flex-end;
-}
-
-.header nav h1 {
-    flex-basis: 50%;
-    align-self: flex-start;
+    align-items: center;
+    align-content: space-around;
+    flex-grow: 3 1 1 1;
+    height: 10%;
+    width: 100%;
 }
 
 .header nav a {
-    align-content: space-between;
-    margin: 0 50 0 50;
+    
 }
+
 header, footer{
     background-color: #1F2937;
 }
@@ -51,14 +67,27 @@ header > nav > a {
     font-style: normal;
 }
 
-.header div {
-    flex-wrap: nowrap;
-    
+.header div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
 }
+
+.header div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
 .header img {
-    max-width: 40%;
-    max-height: fit-content;
-    align-self:flex-end
+    width: 500px;
+    height: 350px;
+    align-self: flex-end;
+   
 }
 /* End Header */
 
@@ -70,25 +99,34 @@ h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    text-align: center;
 }
 
 .random {
     display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-
-
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .random div {
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
 }
 
+.random div div {
+    display: flex;
+    flex-flow: column;
+}
 .random div img {
     border: #3882f6 thick;
     border-radius: 25%;
-    max-width: 20%;
-    max-height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .quote {
@@ -98,7 +136,13 @@ h2 {
     color: #1F2937;
 }
 
+h4 {
+    text-align: right;
+}
+
 footer {
     color: #F9FAF8;
+    text-align: center;
+    height: 5%;
 }
 
